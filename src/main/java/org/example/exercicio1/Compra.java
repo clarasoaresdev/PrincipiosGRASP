@@ -17,11 +17,4 @@ public class Compra {
 
     public void setDataCompra(String dataCompra) {this.dataCompra = dataCompra;}
 
-    public double calculaTotalCompras(List<Compra> compras) {
-        double total = 0;
-        for (Compra compra : compras) {
-            total += compra.getValorCompra();
-        }
-        return total;
-    }
 }
