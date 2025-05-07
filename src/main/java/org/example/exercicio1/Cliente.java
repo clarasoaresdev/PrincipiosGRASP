@@ -16,7 +16,7 @@ import java.util.List;
 
     Na classe Compra eu coloquei os atributos de uma compra que estavam na classe Cliente
 
-    Movi o método CalculaTotalCompras para Compra, que agora
+    Movi o método CalculaTotalCompras para CompraService, que agora
     recebe uma lista de compras e retorna o total
 
 */
