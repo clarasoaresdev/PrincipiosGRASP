@@ -1,47 +1,29 @@
 package org.example.exercicio1;
 
+import java.util.List;
+
 /* TODO: 1 - Aplique o princípio Especialista na Informação (Information Expert).
     Explique os problemas encontrados e o que foi feito para adequar
     o código existente ao princípio.
 
     RESPOSTA:
 
+    O problema é que Cliente tava com a responsabilidade de calcular o total das compras,
+    quando o Especialista na Informação de calcular o total das compras é a classe Compra,
+    que detém todas as informações necessárias para o cálculo
+
+    Criei uma classe Compra
+
+    Na classe Compra eu coloquei os atributos de uma compra que estavam na classe Cliente
+
+    Movi o método CalculaTotalCompras para Compra, que agora
+    recebe uma lista de compras e retorna o total
+
 */
-import org.example.exercicio1.CalculaCompras;
-
-import java.util.List;
-
 public class Cliente {
 
     private String nome;
     private String cpf;
-    private String dataCompra;
+    private List<Compra> compras;
 
-    CalculaCompras calculaCompras = new CalculaCompras();
-
-    calculaCompras.calculaCompras(calculaCompras.valoresCompras.add(new Double ("4344", "332323", "323232"));
-    calculaCompras.getValoresCompras();
-
-    public String getDataCompra() {
-        return dataCompra;
-    }
-
-    public void setDataCompra(String dataCompra) {
-        this.dataCompra = dataCompra;
-    }
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
 }
